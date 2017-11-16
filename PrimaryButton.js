@@ -1,14 +1,26 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { requireNativeComponent } from 'react-native';
+import { requireNativeComponent, StyleSheet } from 'react-native';
 
-const RNPrimaryButton = requireNativeComponent('RNPrimaryButton', PrimaryButton);
+const RNPrimaryButton = requireNativeComponent('RNTPrimaryButton', PrimaryButton);
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    width: '100%'
+  }
+});
 
 class PrimaryButton extends Component {
   render() {
     const { children, onPress } = this.props;
 
-    return <RNPrimaryButton onPress={onPress} text={children} />;
+    return (
+      <RNPrimaryButton
+        onPress={onPress}
+        style={styles.container}
+        text={children}
+      />
+    );
   }
 }
 
