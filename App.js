@@ -12,6 +12,8 @@ import {
   View
 } from 'react-native';
 
+import PrimaryButton from './PrimaryButton';
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
     'Cmd+D or shake for dev menu',
@@ -32,6 +34,9 @@ export default class App extends Component<{}> {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
+        <PrimaryButton onPress={() => console.log('pressed')}>
+          Native primary button
+        </PrimaryButton>
       </View>
     );
   }
