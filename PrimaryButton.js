@@ -18,7 +18,7 @@ class PrimaryButton extends Component {
       <RNPrimaryButton
         onPress={onPress}
         style={styles.container}
-        text={children}
+        title={children}
       />
     );
   }
