@@ -13,7 +13,7 @@ RCT_EXPORT_MODULE()
 
 - (void)buttonTapped:(id)sender
 {
-
+  NSLog(@"buttonTapped fired!");
 }
 
 RCT_CUSTOM_VIEW_PROPERTY(title, NSString, RNTPrimaryButtonView)
@@ -21,7 +21,5 @@ RCT_CUSTOM_VIEW_PROPERTY(title, NSString, RNTPrimaryButtonView)
   NSString *newTitle = json ? [RCTConvert NSString:json] : [view.button titleForState:UIControlStateNormal];
   [view.button setTitle:newTitle forState:UIControlStateNormal];
 }
-
-RCT_EXPORT_VIEW_PROPERTY(onPress, RCTBubblingEventBlock)
 
 @end

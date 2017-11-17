@@ -19,19 +19,22 @@
     self.button.clipsToBounds = YES;
     self.button.translatesAutoresizingMaskIntoConstraints = NO;
     
-    UIView *view = [[UIView alloc] init];
-    [view addSubview:self.button];
+    [self addSubview:self.button];
     
     [NSLayoutConstraint activateConstraints:@[
-      [[self.button topAnchor] constraintEqualToAnchor:[view topAnchor]],
+      [[self.button topAnchor] constraintEqualToAnchor:[self topAnchor]],
       [[self.button heightAnchor] constraintEqualToConstant:44],
-      [[self.button leftAnchor] constraintEqualToAnchor:[view leftAnchor]],
-      [[self.button rightAnchor] constraintEqualToAnchor:[view rightAnchor]]
+      [[self.button leftAnchor] constraintEqualToAnchor:[self leftAnchor]],
+      [[self.button rightAnchor] constraintEqualToAnchor:[self rightAnchor]]
     ]];
   }
-  
+
   return self;
 }
 
+//- (id)setOnPress:
+//{
+//
+//}
 
 @end
