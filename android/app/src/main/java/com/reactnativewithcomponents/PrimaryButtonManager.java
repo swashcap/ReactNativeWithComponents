@@ -1,4 +1,4 @@
-package main.java.com.reactnativewithcomponents;
+package com.reactnativewithcomponents;
 
 import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
