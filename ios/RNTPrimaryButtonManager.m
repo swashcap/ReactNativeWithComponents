@@ -7,7 +7,13 @@ RCT_EXPORT_MODULE()
 - (UIView *)view
 {
   RNTPrimaryButtonView *view = [RNTPrimaryButtonView new];
+  [view.button addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
   return view;
+}
+
+- (void)buttonTapped:(id)sender
+{
+
 }
 
 RCT_CUSTOM_VIEW_PROPERTY(title, NSString, RNTPrimaryButtonView)
