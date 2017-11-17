@@ -3,6 +3,6 @@
 
 @interface RNTPrimaryButtonView : UIView
 
-@property (nonatomic, copy) RCTBubblingEventBlock onPress;
+@property (nonatomic, strong) UIButton *button;
 
 @end
