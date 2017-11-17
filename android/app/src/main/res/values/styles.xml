@@ -5,4 +5,12 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <!-- Primary button -->
+    <style name="PrimaryButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textStyle">bold</item>
+        <item name="colorAccent">@color/orange</item>
+    </style>
+
+    <color name="orange">#FA6400</color>
+
 </resources>
