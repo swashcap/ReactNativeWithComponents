@@ -18,7 +18,7 @@ public class PrimaryButtonManager extends SimpleViewManager<Button> {
 
   @Override
   public Button createViewInstance(ThemedReactContext context) {
-    Button button = new Button();
+    Button button = new Button(context);
     button.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
     button.setText("Sample text!");
 
@@ -27,6 +27,6 @@ public class PrimaryButtonManager extends SimpleViewManager<Button> {
 
   @ReactProp(name = "title")
   public void setTitle(Button button, @Nullable String title) {
-    button.setTitle(title);
+    button.setText(title);
   }
 }
