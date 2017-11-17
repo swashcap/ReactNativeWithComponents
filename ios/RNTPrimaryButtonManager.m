@@ -1,9 +1,4 @@
-#import <UIKit/UIKit.h>
-#import <React/RCTViewManager.h>
-#import "RNTPrimaryButtonView.h"
-
-@interface RNTPrimaryButtonManager : RCTViewManager <ViewDelegate>
-@end
+#import "RNTPrimaryButtonManager.h"
 
 @implementation RNTPrimaryButtonManager
 
@@ -12,7 +7,6 @@ RCT_EXPORT_MODULE()
 - (UIView *)view
 {
   RNTPrimaryButtonView *view = [RNTPrimaryButtonView new];
-  view.delegate = self;
   return view;
 }
 
@@ -30,8 +24,6 @@ RCT_CUSTOM_VIEW_PROPERTY(title, NSString, UIView)
   }
 }
 
-#pragma mark ViewDelegate
-
-- (void)buttonView:(RNTPrimaryButtonView *)buttonView onPress
+RCT_EXPORT_VIEW_PROPERTY(onPress, RCTBubblingEventBlock)
 
 @end
