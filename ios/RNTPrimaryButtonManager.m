@@ -3,17 +3,13 @@
 @implementation RNTPrimaryButtonManager
 
 RCT_EXPORT_MODULE()
+RCT_EXPORT_VIEW_PROPERTY(onPress, RCTBubblingEventBlock)
 
 - (UIView *)view
 {
   RNTPrimaryButtonView *view = [RNTPrimaryButtonView new];
-  [view.button addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
+//  [view.button addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
   return view;
-}
-
-- (void)buttonTapped:(id)sender
-{
-  NSLog(@"buttonTapped fired!");
 }
 
 RCT_CUSTOM_VIEW_PROPERTY(title, NSString, RNTPrimaryButtonView)

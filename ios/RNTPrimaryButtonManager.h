@@ -4,8 +4,8 @@
 
 @interface RNTPrimaryButtonManager : RCTViewManager
 
-- (void)buttonTapped:(id)sender;
+//- (void)buttonTapped:(id)sender;
 
-@property (nonatomic, copy) RCTBubblingEventBlock onPress;
+//@property (nonatomic, copy) RCTBubblingEventBlock onPress;
 
 @end

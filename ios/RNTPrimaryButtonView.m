@@ -1,4 +1,12 @@
 #import "RNTPrimaryButtonView.h"
+#import "RCTUtils.h"
+#import "UIView+React.h"
+
+@interface RNTPrimaryButtonView ()
+
+@property (nonatomic, copy) RCTBubblingEventBlock onPress;
+
+@end
 
 @implementation RNTPrimaryButtonView
 
@@ -27,14 +35,16 @@
       [[self.button leftAnchor] constraintEqualToAnchor:[self leftAnchor]],
       [[self.button rightAnchor] constraintEqualToAnchor:[self rightAnchor]]
     ]];
+    [self.button addTarget:self action:@selector(didTap) forControlEvents:UIControlEventTouchUpInside];
   }
 
   return self;
 }
 
-//- (id)setOnPress:
-//{
-//
-//}
+- (void)didTap {
+  if (_onPress) {
+    _onPress(@{ @"foo": @"bar" });
+  }
+}
 
 @end

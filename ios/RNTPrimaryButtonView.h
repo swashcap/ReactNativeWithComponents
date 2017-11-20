@@ -4,5 +4,5 @@
 @interface RNTPrimaryButtonView : UIView
 
 @property (nonatomic, strong) UIButton *button;
-
+//- (void)onPress;
 @end
