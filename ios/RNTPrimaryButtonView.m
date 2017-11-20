@@ -1,12 +1,4 @@
 #import "RNTPrimaryButtonView.h"
-#import "RCTUtils.h"
-#import "UIView+React.h"
-
-@interface RNTPrimaryButtonView ()
-
-@property (nonatomic, copy) RCTBubblingEventBlock onPress;
-
-@end
 
 @implementation RNTPrimaryButtonView
 

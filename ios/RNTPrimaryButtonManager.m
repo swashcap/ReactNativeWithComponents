@@ -8,7 +8,6 @@ RCT_EXPORT_VIEW_PROPERTY(onPress, RCTBubblingEventBlock)
 - (UIView *)view
 {
   RNTPrimaryButtonView *view = [RNTPrimaryButtonView new];
-//  [view.button addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
   return view;
 }
 

@@ -1,8 +1,10 @@
 #import <UIKit/UIKit.h>
-#import <React/RCTComponent.h>
+#import "RCTUtils.h"
+#import "UIView+React.h"
 
 @interface RNTPrimaryButtonView : UIView
 
 @property (nonatomic, strong) UIButton *button;
-//- (void)onPress;
+@property (nonatomic, copy) RCTBubblingEventBlock onPress;
+
 @end
