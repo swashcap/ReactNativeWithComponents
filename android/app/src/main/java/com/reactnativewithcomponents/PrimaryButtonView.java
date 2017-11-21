@@ -5,7 +5,6 @@ import android.widget.LinearLayout;
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.widget.Button;
-import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.support.annotation.Nullable;
 
@@ -35,6 +34,11 @@ public class PrimaryButtonView extends LinearLayout {
         this.addView(button);
     }
 
+    /**
+     * Set button's text.
+     *
+     * @param text Button's text
+     */
     public void setTitle(@Nullable String text) {
         button.setText(text);
     }
@@ -42,12 +46,13 @@ public class PrimaryButtonView extends LinearLayout {
     /**
      * Handle button press.
      *
+     * @link https://facebook.github.io/react-native/docs/native-components-android.html#events
      * @link https://stackoverflow.com/q/39872442
      */
     public void buttonPress() {
         WritableMap event = Arguments.createMap();
         event.putString("buttonPress", "onPress");
-        ReactContext reactContext = (ReactContext) getContext();
+        ReactContext reactContext = (ReactContext)getContext();
         reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(
                 getId(),
                 "buttonPress",
