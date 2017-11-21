@@ -2,7 +2,16 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { requireNativeComponent, StyleSheet } from 'react-native';
 
-const RNPrimaryButton = requireNativeComponent('RNTPrimaryButton', PrimaryButton);
+const RNPrimaryButton = requireNativeComponent(
+  'RNTPrimaryButton',
+  PrimaryButton,
+  {
+    nativeOnly: {
+      buttonPress: true
+    }
+  }
+);
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
