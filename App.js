@@ -6,13 +6,16 @@
 
 import React, { Component } from 'react';
 import {
+  Image,
   Platform,
   StyleSheet,
   Text,
   View
 } from 'react-native';
 
+import Card from './Card';
 import PrimaryButton from './PrimaryButton';
+import sampleImage from './sample-image.png';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -37,6 +40,14 @@ export default class App extends Component<{}> {
         <PrimaryButton onPress={() => console.log('pressed')}>
           Native primary button
         </PrimaryButton>
+        <Card type='simple'>
+          <Text style={styles.title}>Simple Card</Text>
+          <Image
+            source={sampleImage}
+            style={styles.image}
+          />
+          <Text style={styles.bodyText}>The card is a native container element with children added in react-native.</Text>
+        </Card>
       </View>
     );
   }
@@ -59,4 +70,17 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+  title: {
+    color: 'red',
+    fontSize: 16,
+    fontWeight: '700',
+    textAlign: 'center'
+  },
+  bodyText: {
+    fontSize: 14
+  },
+  image: {
+    height: 100,
+    width: 100
+  }
 });

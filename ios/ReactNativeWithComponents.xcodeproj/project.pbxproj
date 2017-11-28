@@ -35,6 +35,8 @@
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* ReactNativeWithComponentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactNativeWithComponentsTests.m */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		7920CF2E1FC4C0D600C5C72B /* RNTCardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7920CF2D1FC4C0D600C5C72B /* RNTCardManager.m */; };
+		7920CF551FC4C20000C5C72B /* RNTCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7920CF541FC4C20000C5C72B /* RNTCardView.m */; };
 		79BCCED61FBE0DFC0079BDA3 /* RNTPrimaryButtonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BCCED51FBE0DFC0079BDA3 /* RNTPrimaryButtonManager.m */; };
 		79E922B71FBE470100CD4870 /* RNTPrimaryButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E922B61FBE470100CD4870 /* RNTPrimaryButtonView.m */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
@@ -328,6 +330,10 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		7907BF511FBF69020067B495 /* RNTPrimaryButtonManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNTPrimaryButtonManager.h; sourceTree = "<group>"; };
+		7920CF2D1FC4C0D600C5C72B /* RNTCardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTCardManager.m; sourceTree = "<group>"; };
+		7920CF521FC4C15E00C5C72B /* RNTCardManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNTCardManager.h; sourceTree = "<group>"; };
+		7920CF531FC4C1AB00C5C72B /* RNTCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNTCardView.h; sourceTree = "<group>"; };
+		7920CF541FC4C20000C5C72B /* RNTCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTCardView.m; sourceTree = "<group>"; };
 		79BCCED51FBE0DFC0079BDA3 /* RNTPrimaryButtonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTPrimaryButtonManager.m; sourceTree = "<group>"; };
 		79E922B61FBE470100CD4870 /* RNTPrimaryButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTPrimaryButtonView.m; sourceTree = "<group>"; };
 		79E922E71FBE471100CD4870 /* RNTPrimaryButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNTPrimaryButtonView.h; sourceTree = "<group>"; };
@@ -482,6 +488,10 @@
 				7907BF511FBF69020067B495 /* RNTPrimaryButtonManager.h */,
 				79E922B61FBE470100CD4870 /* RNTPrimaryButtonView.m */,
 				79E922E71FBE471100CD4870 /* RNTPrimaryButtonView.h */,
+				7920CF2D1FC4C0D600C5C72B /* RNTCardManager.m */,
+				7920CF521FC4C15E00C5C72B /* RNTCardManager.h */,
+				7920CF531FC4C1AB00C5C72B /* RNTCardView.h */,
+				7920CF541FC4C20000C5C72B /* RNTCardView.m */,
 			);
 			name = ReactNativeWithComponents;
 			sourceTree = "<group>";
@@ -1085,7 +1095,9 @@
 				79E922B71FBE470100CD4870 /* RNTPrimaryButtonView.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				7920CF2E1FC4C0D600C5C72B /* RNTCardManager.m in Sources */,
 				79BCCED61FBE0DFC0079BDA3 /* RNTPrimaryButtonManager.m in Sources */,
+				7920CF551FC4C20000C5C72B /* RNTCardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
