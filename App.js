@@ -25,7 +25,32 @@ const instructions = Platform.select({
 });
 
 export default class App extends Component<{}> {
+  constructor(...args) {
+    super(...args);
+
+    this.state = {
+      isEnabled: true
+    };
+    this.toggle = this.toggle.bind(this);
+  }
+
+  toggle() {
+    console.log('App#toggle called');
+    this.setState({
+      isEnabled: !this.state.isEnabled
+    });
+  }
+
   render() {
+    const img = this.state.isEnabled ?
+      (
+        <Image
+          source={sampleImage}
+          style={styles.image}
+        />
+      ) :
+      undefined;
+
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
@@ -37,15 +62,12 @@ export default class App extends Component<{}> {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
-        <PrimaryButton onPress={() => console.log('pressed')}>
+        <PrimaryButton onPress={this.toggle}>
           Native primary button
         </PrimaryButton>
         <Card type='simple'>
           <Text style={styles.title}>Simple Card</Text>
-          <Image
-            source={sampleImage}
-            style={styles.image}
-          />
+          {img}
           <Text style={styles.bodyText}>The card is a native container element with children added in react-native.</Text>
         </Card>
       </View>
@@ -71,12 +93,14 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   title: {
+    backgroundColor: 'transparent',
     color: 'red',
     fontSize: 16,
     fontWeight: '700',
     textAlign: 'center'
   },
   bodyText: {
+    backgroundColor: 'transparent',
     fontSize: 14
   },
   image: {
