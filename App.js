@@ -65,11 +65,13 @@ export default class App extends Component<{}> {
         <PrimaryButton onPress={this.toggle}>
           Native primary button
         </PrimaryButton>
-        <Card type='simple'>
-          <Text style={styles.title}>Simple Card</Text>
-          {img}
-          <Text style={styles.bodyText}>The card is a native container element with children added in react-native.</Text>
-        </Card>
+        <View style={{ padding: 20 }}>
+          <Card type='simple'>
+            <Text style={styles.title}>Simple Card</Text>
+            {img}
+            <Text style={styles.bodyText}>The card is a native container element with children added in react-native.</Text>
+          </Card>
+        </View>
       </View>
     );
   }
