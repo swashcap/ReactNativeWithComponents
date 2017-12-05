@@ -67,8 +67,9 @@ export default class App extends Component<{}> {
         </PrimaryButton>
         <View style={{ padding: 20 }}>
           <Card type='simple'>
-            <Text style={styles.title}>Simple Card</Text>
+            <View style={{ width: 20, height: 20, backgroundColor: 'hotpink' }} />
             {img}
+            <Text style={styles.title}>Simple Card</Text>
             <Text style={styles.bodyText}>The card is a native container element with children added in react-native.</Text>
           </Card>
         </View>
@@ -106,7 +107,11 @@ const styles = StyleSheet.create({
     fontSize: 14
   },
   image: {
+    backgroundColor: 'pink',
     height: 100,
+    minHeight: 10,
+    minWidth: 10,
+    padding: 10,
     width: 100
   }
 });
