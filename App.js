@@ -13,6 +13,7 @@ import {
   View
 } from 'react-native';
 
+import Body from './typography/Body';
 import Card from './Card';
 import Headline from './typography/Headline';
 import PrimaryButton from './PrimaryButton';
@@ -70,6 +71,7 @@ export default class App extends Component<{}> {
 
         <Headline>This is a headline</Headline>
         <Title>This is a title</Title>
+        <Body>This is body text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Body>
 
         <View style={{ height: 200, padding: 20 }}>
           <Card type='simple'>
