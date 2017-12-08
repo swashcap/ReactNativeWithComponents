@@ -9,6 +9,7 @@
   if (self) {
     [self setTextColor:UIColor.magentaColor];
     [self setFont:[UIFont systemFontOfSize:20]];
+    [self setBackgroundColor:UIColor.clearColor];
   }
 
   return self;
