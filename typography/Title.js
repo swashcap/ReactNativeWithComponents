@@ -6,6 +6,7 @@ const RNTTitleView = requireNativeComponent('RNTTitleView', Title);
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: 'transparent',
     flex: 1,
     width: '100%',
   },

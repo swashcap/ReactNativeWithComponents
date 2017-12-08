@@ -7,9 +7,8 @@
   self = [super initWithFrame:aRect];
 
   if (self) {
-    [self setTextColor:UIColor.magentaColor];
+    [self setTextColor:UIColor.darkGrayColor];
     [self setFont:[UIFont systemFontOfSize:20]];
-    [self setBackgroundColor:UIColor.clearColor];
   }
 
   return self;

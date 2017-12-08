@@ -9,6 +9,7 @@ const RNTHeadlineView = requireNativeComponent(
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: 'transparent',
     flex: 1,
     width: '100%',
   }
