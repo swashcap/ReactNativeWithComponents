@@ -16,6 +16,7 @@ import {
 import Card from './Card';
 import Headline from './typography/Headline';
 import PrimaryButton from './PrimaryButton';
+import Title from './typography/Title';
 import sampleImage from './sample-image.png';
 
 const instructions = Platform.select({
@@ -66,7 +67,10 @@ export default class App extends Component<{}> {
         <PrimaryButton onPress={this.toggle}>
           Native primary button
         </PrimaryButton>
+
         <Headline>This is a headline</Headline>
+        <Title>This is a title</Title>
+
         <View style={{ height: 200, padding: 20 }}>
           <Card type='simple'>
             <Text style={styles.title}>Simple Card</Text>
