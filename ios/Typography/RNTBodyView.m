@@ -10,6 +10,7 @@
     [self setTextColor:UIColor.magentaColor];
     [self setFont:[UIFont systemFontOfSize:16]];
     self.editable = NO;
+    self.scrollEnabled = NO;
   }
   
   return self;
