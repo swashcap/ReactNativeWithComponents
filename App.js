@@ -14,6 +14,7 @@ import {
 } from 'react-native';
 
 import Card from './Card';
+import Headline from './typography/Headline';
 import PrimaryButton from './PrimaryButton';
 import sampleImage from './sample-image.png';
 
@@ -65,12 +66,15 @@ export default class App extends Component<{}> {
         <PrimaryButton onPress={this.toggle}>
           Native primary button
         </PrimaryButton>
-        <View style={{ padding: 20 }}>
+        <Headline>This is a headline</Headline>
+        <View style={{ height: 200, padding: 20 }}>
           <Card type='simple'>
-            <View style={{ width: 20, height: 20, backgroundColor: 'hotpink' }} />
-            {img}
             <Text style={styles.title}>Simple Card</Text>
+            {img}
             <Text style={styles.bodyText}>The card is a native container element with children added in react-native.</Text>
+            <PrimaryButton onPress={this.toggle}>
+              Native primary button
+            </PrimaryButton>
           </Card>
         </View>
       </View>

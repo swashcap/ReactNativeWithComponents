@@ -38,6 +38,8 @@
 		7920CF2E1FC4C0D600C5C72B /* RNTCardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7920CF2D1FC4C0D600C5C72B /* RNTCardManager.m */; };
 		7920CF551FC4C20000C5C72B /* RNTCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7920CF541FC4C20000C5C72B /* RNTCardView.m */; };
 		79BCCED61FBE0DFC0079BDA3 /* RNTPrimaryButtonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BCCED51FBE0DFC0079BDA3 /* RNTPrimaryButtonManager.m */; };
+		79DF17581FDB244C0059CF36 /* RNTHeadlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DF17571FDB244C0059CF36 /* RNTHeadlineView.m */; };
+		79DF17641FDB25610059CF36 /* RNTHeadlineViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DF17631FDB25610059CF36 /* RNTHeadlineViewManager.m */; };
 		79E922B71FBE470100CD4870 /* RNTPrimaryButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E922B61FBE470100CD4870 /* RNTPrimaryButtonView.m */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
@@ -335,6 +337,10 @@
 		7920CF531FC4C1AB00C5C72B /* RNTCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNTCardView.h; sourceTree = "<group>"; };
 		7920CF541FC4C20000C5C72B /* RNTCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTCardView.m; sourceTree = "<group>"; };
 		79BCCED51FBE0DFC0079BDA3 /* RNTPrimaryButtonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTPrimaryButtonManager.m; sourceTree = "<group>"; };
+		79DF17561FDB244C0059CF36 /* RNTHeadlineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNTHeadlineView.h; sourceTree = "<group>"; };
+		79DF17571FDB244C0059CF36 /* RNTHeadlineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNTHeadlineView.m; sourceTree = "<group>"; };
+		79DF17621FDB25610059CF36 /* RNTHeadlineViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNTHeadlineViewManager.h; sourceTree = "<group>"; };
+		79DF17631FDB25610059CF36 /* RNTHeadlineViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNTHeadlineViewManager.m; sourceTree = "<group>"; };
 		79E922B61FBE470100CD4870 /* RNTPrimaryButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTPrimaryButtonView.m; sourceTree = "<group>"; };
 		79E922E71FBE471100CD4870 /* RNTPrimaryButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNTPrimaryButtonView.h; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
@@ -477,6 +483,7 @@
 		13B07FAE1A68108700A75B9A /* ReactNativeWithComponents */ = {
 			isa = PBXGroup;
 			children = (
+				79DF17551FDB24330059CF36 /* Typography */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -533,6 +540,17 @@
 				3DAD3E881DF850E9000B6D8A /* libRCTLinking-tvOS.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		79DF17551FDB24330059CF36 /* Typography */ = {
+			isa = PBXGroup;
+			children = (
+				79DF17561FDB244C0059CF36 /* RNTHeadlineView.h */,
+				79DF17571FDB244C0059CF36 /* RNTHeadlineView.m */,
+				79DF17621FDB25610059CF36 /* RNTHeadlineViewManager.h */,
+				79DF17631FDB25610059CF36 /* RNTHeadlineViewManager.m */,
+			);
+			path = Typography;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -1093,9 +1111,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				79E922B71FBE470100CD4870 /* RNTPrimaryButtonView.m in Sources */,
+				79DF17641FDB25610059CF36 /* RNTHeadlineViewManager.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				7920CF2E1FC4C0D600C5C72B /* RNTCardManager.m in Sources */,
+				79DF17581FDB244C0059CF36 /* RNTHeadlineView.m in Sources */,
 				79BCCED61FBE0DFC0079BDA3 /* RNTPrimaryButtonManager.m in Sources */,
 				7920CF551FC4C20000C5C72B /* RNTCardView.m in Sources */,
 			);
