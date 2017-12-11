@@ -1,4 +1,7 @@
 #import <UIKit/UIKit.h>
 
-@interface RNTHeadlineView : UILabel
+@interface RNTHeadlineView : UIView
+
+@property (nonatomic, strong) UILabel *label;
+
 @end

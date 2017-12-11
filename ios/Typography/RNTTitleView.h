@@ -1,5 +1,7 @@
 #import <UIKit/UIKit.h>
 
-@interface RNTTitleView : UILabel
+@interface RNTTitleView : UIView
+
+@property (nonatomic, strong) UILabel *label;
 
 @end

@@ -11,8 +11,8 @@ RCT_EXPORT_MODULE()
 
 RCT_CUSTOM_VIEW_PROPERTY(text, NSString, RNTHeadlineView)
 {
-    NSString *newText = json ? [RCTConvert NSString:json] : view.text;
-    view.text = newText;
+    NSString *newText = json ? [RCTConvert NSString:json] : view.label.text;
+    view.label.text = newText;
 }
 
 @end
