@@ -8,6 +8,7 @@ import React, { Component } from 'react';
 import {
   Image,
   Platform,
+  ScrollView,
   StyleSheet,
   Text,
   View
@@ -55,7 +56,7 @@ export default class App extends Component<{}> {
       undefined;
 
     return (
-      <View style={styles.container}>
+      <ScrollView contentContainerStyle={styles.container}>
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
@@ -83,7 +84,7 @@ export default class App extends Component<{}> {
             </PrimaryButton>
           </Card>
         </View>
-      </View>
+      </ScrollView>
     );
   }
 }
@@ -94,6 +95,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
+    paddingVertical: 20
   },
   welcome: {
     fontSize: 20,
