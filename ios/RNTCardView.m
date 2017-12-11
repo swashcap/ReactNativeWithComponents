@@ -75,4 +75,15 @@
   return RCTIsReactRootView(self.root.reactTag);
 }
 
+/**
+ * @link https://github.com/facebook/react-native/issues/15097#issuecomment-317098474
+ */
+//- (void)layoutSubviews
+//{
+//  [super layoutSubviews];
+//  for (UIView* view in self.subviews) {
+//    [view setFrame:self.bounds];
+//  }
+//}
+
 @end
