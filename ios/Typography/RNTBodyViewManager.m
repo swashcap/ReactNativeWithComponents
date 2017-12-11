@@ -11,8 +11,8 @@ RCT_EXPORT_MODULE()
 
 RCT_CUSTOM_VIEW_PROPERTY(text, NSString, RNTBodyView)
 {
-  NSString *newText = json ? [RCTConvert NSString:json] : view.text;
-  view.text = newText;
+  NSString *newText = json ? [RCTConvert NSString:json] : view.textView.text;
+  view.textView.text = newText;
 }
 
 @end

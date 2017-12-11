@@ -1,5 +1,7 @@
 #import <UIKit/UIKit.h>
 
-@interface RNTBodyView : UITextView
+@interface RNTBodyView : UIView <NSLayoutManagerDelegate>
+
+@property (strong, atomic) UITextView *textView;
 
 @end
